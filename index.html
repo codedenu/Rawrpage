@@ -12,28 +12,33 @@
         height: 100vh;
         margin: 0;
         font-family: Arial, sans-serif;
-        text-align: center;
         flex-direction: column;
+        text-align: center;
       }
+
+      .media-row {
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+        flex-wrap: wrap; /* Optional: wraps on smaller screens */
+        justify-content: center;
+      }
+
+      img,
       video {
-        max-width: 80%;
+        max-width: 300px;
         height: auto;
-        margin-top: 20px;
         border-radius: 8px;
-      }
-      img {
-        max-width: 80%;
-        height: auto;
-        margin-top: 20px;
       }
     </style>
   </head>
   <body>
     <h1>rawr :3c</h1>
-     <img src="https://media.tenor.com/WxknM1oyJskAAAAC/boykisser.gif" alt="rawwwr gif" />
-     <video autoplay loop muted playsinline>
-     <source src="https://media.tenor.com/wo2XTyeyuPMAAAPo/mimi-typh-mimi.mp4" type="video/mp4">
-     Your browser does not support the video tag.
-  </video>
+    <div class="media-row">
+      <img src="https://media.tenor.com/WxknM1oyJskAAAAC/boykisser.gif" alt="rawwwr gif" />
+      <video autoplay loop muted playsinline>
+        <source src="https://media.tenor.com/wo2XTyeyuPMAAAPo/mimi-typh-mimi.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
   </body>
-</html>
